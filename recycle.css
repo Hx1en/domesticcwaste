@@ -1,0 +1,181 @@
+
+ 
+ body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+header{
+    background:linear-gradient(135deg,#00a8cc,#74d4e8);
+    text-align:center;
+    color:white;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+        nav{
+            padding: 15px 21px;
+        }
+        .link{
+            text-align: center;
+            background: rgb(154, 198, 223);
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 6px 8px;
+            display: inline-block;
+            transition: background-color 0.3s ease, border-radius 0.3s ease;
+        }
+ 
+        nav a:hover{
+            animation: ease-in-out 0.6s hoverEffect 1 alternate infinite;
+            background-color: rgb(57, 124, 145);
+            border-radius: 8px;
+        }
+        .drop{
+            display: inline-block;
+            position: relative;
+        }
+ 
+        .dropdown{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 5px;
+            background-color: rgb(62, 151, 202);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 0;
+            list-style: none;
+            border-radius: 15px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+        }
+ 
+        .drop:hover .dropdown{
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+ 
+        .dropdown li{
+            display: block;
+        }
+ 
+        .dropdown li a{
+            display: block;
+            padding: 10px 12px;
+        }
+        #what{
+            padding: 20px;
+            margin: 30px;
+            margin-left: 10px;
+            border-radius: 15px;
+            width: 48%;
+            color: rgb(18, 72, 109);
+            box-shadow: 0px 0px 7px rgba(0,0,0,0.3);
+            margin-top: 110px;
+        }
+        #how{
+            padding: 20px;
+            background-color: rgb(236, 244, 248);
+            border-radius: 12px;
+            margin: 30px;
+            margin-left: 10px;
+            width: 48%;
+            color: rgb(18, 72, 109);
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+           
+        }
+        #how ul{
+            padding-left: 25px;
+        }
+ 
+        #how li{
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .sidepic{
+            position: absolute;
+            right: 5px;
+            top: 500px;
+            width: 605px;
+            border-radius: 12px;
+            box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+        }
+        .sidepic :hover{
+            animation: ease-in-out 0.6s hoverEffect 1 alternate infinite;
+            transform: scale(1.05);
+        }
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.footer_container {
+    background-color: rgba(80, 137, 246, 1);
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 15px 15px 0 0;
+}
+.footer_section {
+    flex: 1;
+    margin: 0 10px;
+}
+.footer_section h1 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.footer_section p, .footer_section a, .footer_section h1 {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+}
+.footer_section a:hover {
+    text-decoration: underline;
+}
+.footer_img {
+    width: 50px;
+}
+.social_icons {
+    display: flex;
+    gap: 20px;
+}
+.social_icons i {
+    color: white;
+    font-size: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.copyright {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+ 
